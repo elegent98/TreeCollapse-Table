@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap");
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Merriweather" sans-serif;
+    font-size: 1rem;
+    background: #ffffff;
+}
+.container {
+    width: 1336px;
+    height: 100vh;
+    margin: auto;
+}
+/* -----------------------Navbar---------------------- */
+.masthead {
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+nav {
+    display: flex;
+    gap: 1.7rem;
+}
+.text{
+    text-decoration: none;
+    color: rgba(0, 68, 255, 0.632);
+}
+.text:hover{    
+    text-decoration: underline;
+    color: blue;
+}
+a.router-link-exact-active {
+    color: rgb(26, 236, 2)
+}
+  /* --------------------------------datatable----------------------- */
+  
+.datatable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transform: translateY(50%);
+}
+.separate{
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 15%;
+    height: 25%;
+    text-decoration: none;
+}
+.separate:hover{
+    box-shadow: 0 0 5px 2px rgb(4, 213, 160);
+}
+.table{
+    padding: 10px;
+    width: 900px;
+    min-height: 300px;
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.1);
+}
+.table-header {
+    display: flex;
+    justify-content: space-around;
+    background: #ddd;
+    height: 30px;
+    align-items: center;
+}
+
+ .table-header_item {
+    display: flex;
+    background: #F2F4F4 ;
+    height: 40px;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px !important;
+    padding-left: 20px;
+}
+
+
+
+ .table-body {
+    margin-top: 20px;
+}
+
+
+.table-body_item{
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ .table-body_item p{
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    
+}
+
+ .name{
+    color: #5DADE2;
+    font-weight: 500;
+}
+
+ .danger{
+    color: #eb1c09;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid rgba(211, 84, 0, 0.4);
+    padding: 3px 5px;
+    border-radius: 2px;
+    font-size: 10px;
+    background-color: rgba(211, 84, 0, 0.1);
+
+}
+
+.success{
+    color: #27AE60 ;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid rgba(0, 255, 0, 0.4) ;
+    padding: 3px 5px;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 10px;
+    background-color: rgba(0, 255, 0, 0.1);
+
+
+}
+
+
+.job{
+    color: blue ;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid rgba(0, 0, 255, 0.4) ;
+    padding: 3px;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 10px;
+    background-color: rgba(0, 0, 255, 0.1);
+
+
+}
+
+
+.tags{
+    display: flex;
+    justify-content: left;
+}
+.tags p{
+    padding-left: 0;
+    width: 50px;
+}
+
+ .action{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.datatable .table .table-body .table-body_item .action div{
+    color: #5DADE2;
+    font-weight: 500;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* ----------------------------------Tree----------------------------------- */
+
+.container .box {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.container .box .tree-collapse {
+    width: 400px;
+    background: #ddd;
+}
+.tree-items{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.separat{
+    margin: 25px 0 15px 25% ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    text-decoration: none;
+}
+.separat:hover{
+    box-shadow: 0 0 5px 2px rgb(4, 213, 160);
+}
+.tree .tree-items .tree-items_item {
+    height: 40px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    text-align: start;
+    position: relative;
+}
+
+.tree .tree-items .tree-items_item:hover {
+    background: #b1b1b1;
+}
+.tree .tree-items .tree-items_item .item-hover {
+    background: transparent;
+    width: 5px;
+    height: 100%;
+    right: 0;
+    transition: all 0.3s ease;
+}
+
+
+.tree .tree-items .tree-items_item:hover .item-hover {
+    background: #6495ED;
+}
+
+.tree .tree-items .tree-items_item .tree-items_item-name {
+    margin: 0 0 0 20px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.tree .tree-items .tree-items_item .tree-items_item-name i {
+    padding-right: 10px;
+    transition: all 0.3s;
+    transform: rotate(0);
+}
+
+.tree .tree-items .child .tree-items_item-name {
+    margin: 0 0 0 50px;
+    font-weight: 500;
+}
+
+.tree .tree-items .child {
+    height: 0;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+
+.tree .tree-items .child.active {
+    height: 40px;
+    opacity: 1;
+}
+.tree .tree-items .fa-caret-right.active  {
+   rotate : 90deg;
+
+}
+
+.tree .tree-items .child2  {
+    padding-left: 80px;
+    height: 0;
+    opacity: 0;
+    transition: all 0.3s;
+ }
+
+ .tree .tree-items .child2.active  {
+    height: 40px;
+    opacity: 1;
+ }
